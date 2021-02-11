@@ -1,8 +1,8 @@
-title: Urban Template
-url: "https://teal-worm.cloudvent.net"
+title: Xshuttle
+url: "https://www.xshuttle.co.nz"
 baseurl:
-google_analytics_key:
-google_maps_javascript_api_key:
+google_analytics_key: UA-54475031-3
+google_maps_javascript_api_key: AIzaSyDGBgFoMcBIgKoaxSV13bjSg3dLyBSoQhQ
 disqus_shortname:
 
 # Default description in social shares for the jekyll-seo-tag gem
@@ -16,9 +16,9 @@ author:
 
 # Social details for the jekyll-seo-tag gem
 social:
-  name: Urban Template
+  name: Xshuttle
   links:
-    - https://github.com/CloudCannon/urban-jekyll-template
+    - https://www.xshuttle.co.nz
 
 timezone: Etc/UTC
 
