@@ -1,8 +1,8 @@
 ---
-name: Hydra Template
-subtitle: Product marketing template for Jekyll
-external_url: https://github.com/CloudCannon/hydra-jekyll-template
-image_path: /images/clients/hydra.png
+name: BAIC Group
+subtitle: 
+external_url: 
+image_path: /images/clients/beiqi_logo.png
 ---
 
 Marketing site template for Jekyll. Browse through a [live demo](https://proud-alligator.cloudvent.net/).
