@@ -4,8 +4,8 @@ links:
 - name: Services
   link: /#service
     
-- name: Portfolio
-  link: /portfolio/
+- name: Booking/Quotation
+  link: /#booking
 - name: Blog
   link: /blog/
 - name: About
