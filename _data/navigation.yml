@@ -2,7 +2,7 @@ links:
 - name: Home
   link: /
 - name: Services
-  link: .index.html#service
+  link: /#service
     
 - name: Portfolio
   link: /portfolio/
