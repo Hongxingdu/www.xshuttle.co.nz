@@ -1,22 +1,22 @@
 - title: Pages
-links:
-- name: Home
-  link: /
-- name: Services
-  link: /#service
+  links:
+  - name: Home
+    link: /
+  - name: Services
+    link: /#service
     
-- name: Booking/Quotation
-  link: /#booking
-- name: Blog
-  link: /blog/
-- name: About
-  link: /about/
-- name: Contact
-  link: /contact/
-- name: Xtravel Club
-  link: http://xtravel.club
-- name: 中文版
-  link: /  
+  - name: Booking/Quotation
+    link: /#booking
+  - name: Blog
+    link: /blog/
+  - name: About
+    link: /about/
+  - name: Contact
+    link: /contact/
+  - name: Xtravel Club
+    link: http://xtravel.club
+  - name: 中文版
+    link: /  
   
 - title: Social
   links:
