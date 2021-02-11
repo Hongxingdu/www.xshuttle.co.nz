@@ -1,6 +1,9 @@
 links:
 - name: Home
   link: /
+- name: Services
+  link: .index.html#service
+    
 - name: Portfolio
   link: /portfolio/
 - name: Blog
