@@ -1,30 +1,38 @@
 - title: Pages
-  links:
-    - name: Home
-      link: /
-    - name: Portfolio
-      link: /portfolio/
-    - name: Blog
-      link: /blog/
-    - name: About
-      link: /about/
-    - name: Contact
-      link: /contact/
+links:
+- name: Home
+  link: /
+- name: Services
+  link: /#service
+    
+- name: Booking/Quotation
+  link: /#booking
+- name: Blog
+  link: /blog/
+- name: About
+  link: /about/
+- name: Contact
+  link: /contact/
+- name: Xtravel Club
+  link: http://xtravel.club
+- name: 中文版
+  link: /  
+  
 - title: Social
   links:
     - name: Facebook
-      link: https://facebook.com/cloudcannon/
+      link: https://facebook.com/xtravelclub2
       social_icon: Facebook
       new_window: true
     - name: Twitter
-      link: https://twitter.com/cloudcannon/
+      link: https://twitter.com/xtravelclub1
       social_icon: Twitter
       new_window: true
     - name: Instagram
-      link: https://instagram.com/
+      link: https://instagram.com/xtravelclub1
       social_icon: Instagram
       new_window: true
     - name: LinkedIn
-      link: https://nz.linkedin.com/company/cloud-cannon
+      link: https://nz.linkedin.com/company/xtravel-club
       social_icon: LinkedIn
       new_window: true
