@@ -1,0 +1,204 @@
+---
+title: Xshuttle
+heading: Quality Airport Shuttle Service
+subtitle: Make your journey more enjoyable
+map:
+  latitude: -37.8015206
+  longitude: 175.321942
+  address: "PO Box 23048, Abels, Hamilton 3256"
+  zoom: 13
+---
+
+<section class="hero diagonal">
+	<div class="container">
+		<h2 class="editable">
+			Airport Shuttle Service Around Auckland &amp; Waikato
+		</h2>
+		<p class="subtext editable">
+			Founded in 2014, Xshuttle has been doing airport shuttle and charter service for a while. A quality fleet with a group of passinate people with whom you can trust.
+		</p>
+		<p><a class="button alt" href="{{ site.baseurl }}/contact/">Contact Us</a></p>
+	</div>
+</section>
+
+<section id="service" class="diagonal alternate">
+	<div class="container halves">
+		<div>
+			<ul class="image-list">
+				<li><img src="{{ site.baseurl }}/images/IMG_1098.JPEG" width="100%" style="margin-bottom: 10px;" /></li>
+			
+			</ul>
+		</div>
+		<div>
+			<h3 class="editable">
+				Our Services
+			</h3>
+			<p class="editable">
+			<li>Airport Shuttle Service Around Auckland &amp; Waikato </li>
+			<li> Charter (specialized in minibus for no more than 11 passengers)</li>
+			<li> Day trip around Aukland & Waikato</li>
+					<li> Tour groups within New Zealand</li>
+			</p>
+		</div>
+	</div>
+</section>
+
+<section id="partner" class="diagonal patterned">
+	<div class="container halves">
+		<div>
+			<h3 class="editable">
+				Our Clients & Partners
+			</h3>
+			<p class="editable">
+				We take pride in our previous jobs and our happy customers. We cater to any demand to travel around.
+			</p>
+			<p class="editable">
+				<a href="/portfolio/">View Full Portfolio &rarr;</a>
+			</p>
+		</div>
+		<div>
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}" /></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>
+</section>
+
+
+
+<section id="booking" class="diagonal">
+	<div class="container">
+	  		<h2>Booking/Quotation</h2>
+		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
+			<input type="hidden" name="_to" value="info@xshuttle.co.nz" />
+			<input type="text" name="_gotcha" style="display: none;" />
+
+			<div class="halves">
+				<div>
+					<label for="name">Your Name</label>
+					<input type="text" name="name" id="name" placeholder="John Doe" />
+				</div>
+
+				<div>
+					<label for="eamail">Your Email</label>
+					<input type="email" name="email" id="email" placeholder="john.doe@email.com" />
+				</div>
+				
+					<div>
+					<label for="phone">Your Phone</label>
+					<input type="phone" name="phone" id="phone" placeholder="021 1234567" />
+				</div>
+				
+				<div>
+					<label for="address1">Your Address</label>
+					<input type="text" name="address1" id="address1" placeholder="" />
+				</div>
+			
+			</div>
+
+	<div class="halves">
+				<div>
+					<label for="date">Travel Date</label>
+					<input type="date" name="date" id="traveldate" placeholder="2018-07-22" />
+				</div>
+
+	<div>
+					<label for="pax">No.of Passengers</label>
+					<input type="number" name="pax" id="pax" placeholder="1" />
+				</div>
+
+				<div>
+					<label for="bags">No. of Luggage</label>
+					<input type="number" name="bags" id="bags" placeholder="2" />
+				</div>
+
+		
+				
+			
+			</div>
+
+	<div class="halves">
+				<div>
+					<label for="address_from">Pick up address</label>
+					<input type="address" name="address_from" id="address_from" placeholder="Auckland International Airport" />
+				</div>
+
+				<div>
+					<label for="address_to">Drop off address</label>
+					<input type="address" name="address_to" id="address3" placeholder="" />
+				</div>
+				
+					<div>
+					<label for="EAT">Expected Arrival Time</label>
+					<input type="time" name="Expected Arrival Time" id="EAT" placeholder="5pm" />
+				</div>
+			</div>
+
+
+
+
+			<label for="message">Any other things you would like us to know</label>
+			<textarea name="message" id="message" placeholder="Hi There..."></textarea>
+
+			<input type="submit" value="Send Message" />
+		</form>
+	</div>
+</section>
+
+
+ 
+
+
+
+<section class="diagonal map">
+	<div id="gmap_canvas"></div>
+</section>
+
+<section class="diagonal">
+	<div class="container halves aligned-top">
+		<div>
+			<h3>Address</h3>
+				<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+		</div>
+		<div>
+			<h3>Email</h3>
+			<p><a href="mailto:{{ site.data.company.contact_email_address }}">{{ site.data.company.contact_email_address }}</a></p>
+						<h3>Phones</h3>
+			<p><a "{{ site.data.company.contact_phone_number }}">{{ site.data.company.contact_phone_number }}</a></p>
+		</div>
+	</div>
+</section>
+
+<script type="text/javascript">
+	window.mapData = {{ page.map | jsonify }};
+	
+
+
+
+	function initMap() {
+		var myOptions = {
+			scrollwheel: false,
+			draggable: false,
+			panControl: false,
+			disableDefaultUI: true,
+			styles: [{"featureType":"landscape.man_made","elementType":"geometry","stylers":[{"color":"#f7f1df"}]},{"featureType":"landscape.natural","elementType":"geometry","stylers":[{"color":"#d0e3b4"}]},{"featureType":"landscape.natural.terrain","elementType":"geometry","stylers":[{"visibility":"off"}]},{"featureType":"poi","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"poi.business","elementType":"all","stylers":[{"visibility":"off"}]},{"featureType":"poi.medical","elementType":"geometry","stylers":[{"color":"#fbd3da"}]},{"featureType":"poi.park","elementType":"geometry","stylers":[{"color":"#bde6ab"}]},{"featureType":"road","elementType":"geometry.stroke","stylers":[{"visibility":"off"}]},{"featureType":"road","elementType":"labels","stylers":[{"visibility":"off"}]},{"featureType":"road.highway","elementType":"geometry.fill","stylers":[{"color":"#ffe15f"}]},{"featureType":"road.highway","elementType":"geometry.stroke","stylers":[{"color":"#efd151"}]},{"featureType":"road.arterial","elementType":"geometry.fill","stylers":[{"color":"#ffffff"}]},{"featureType":"road.local","elementType":"geometry.fill","stylers":[{"color":"black"}]},{"featureType":"transit.station.airport","elementType":"geometry.fill","stylers":[{"color":"#cfb2db"}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#a2daf2"}]}],
+			zoom: window.mapData.zoom,
+			maxZoom: window.mapData.zoom,
+			minZoom: window.mapData.zoom,
+			center: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude),
+			mapTypeId: google.maps.MapTypeId.ROADMAP
+		};
+		map = new google.maps.Map(document.getElementById("gmap_canvas"), myOptions);
+		marker = new google.maps.Marker({
+			map: map,
+			position: new google.maps.LatLng(window.mapData.latitude, window.mapData.longitude)
+		});
+
+		google.maps.event.addDomListener(window, "resize", function () {
+			map.setCenter(myOptions.center);
+		});
+	}
+</script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key={{ site.google_maps_javascript_api_key }}&amp;callback=initMap"></script>
