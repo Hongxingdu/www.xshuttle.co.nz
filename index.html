@@ -77,41 +77,41 @@ map:
 
 			<div class="halves">
 				<div>
-					<label for="name">Your Name</label>
-					<input type="text" name="name" id="name" placeholder="John Doe" />
+					<label for="name">Your Name*</label>
+					<input type="text" name="name" id="name" placeholder="John Doe" required data-validation-required-message="Please enter your name."/>
 				</div>
 
 				<div>
-					<label for="eamail">Your Email</label>
-					<input type="email" name="email" id="email" placeholder="john.doe@email.com" />
+					<label for="eamail">Your Email*</label>
+					<input type="email" name="email" id="email" placeholder="john.doe@email.com" required data-validation-required-message="Please enter your email."/>
 				</div>
 				
 					<div>
-					<label for="phone">Your Phone</label>
-					<input type="phone" name="phone" id="phone" placeholder="021 1234567" />
+					<label for="phone">Your Phone*</label>
+					<input type="phone" name="phone" id="phone" placeholder="021 1234567" required data-validation-required-message="Please enter your phone number." />
 				</div>
 				
 				<div>
-					<label for="address1">Your Address</label>
-					<input type="text" name="address1" id="address1" placeholder="" />
+					<label for="address1">Your Address*</label>
+					<input type="text" name="address1" id="address1" placeholder="" required data-validation-required-message="Please enter your address." />
 				</div>
 			
 			</div>
 
 	<div class="halves">
 				<div>
-					<label for="date">Travel Date</label>
-					<input type="date" name="date" id="traveldate" placeholder="2018-07-22" />
+					<label for="date">Travel Date*</label>
+					<input type="date" name="date" id="traveldate" placeholder="2018-07-22" required data-validation-required-message="Please enter your travel date."/>
 				</div>
 
 	<div>
-					<label for="pax">No.of Passengers</label>
-					<input type="number" name="pax" id="pax" placeholder="1" />
+					<label for="pax">No.of Passengers*</label>
+					<input type="number" name="pax" id="pax" placeholder="1" required data-validation-required-message="Please enter your number of passengers."/>
 				</div>
 
 				<div>
-					<label for="bags">No. of Luggage</label>
-					<input type="number" name="bags" id="bags" placeholder="2" />
+					<label for="bags">No. of Luggage*</label>
+					<input type="number" name="bags" id="bags" placeholder="2" required data-validation-required-message="Please enter your number of luggage."/>
 				</div>
 
 		
@@ -121,25 +121,25 @@ map:
 
 	<div class="halves">
 				<div>
-					<label for="address_from">Pick up address</label>
-					<input type="address" name="address_from" id="address_from" placeholder="Auckland International Airport" />
+					<label for="address_from">Pick up address*</label>
+					<input type="address" name="address_from" id="address_from" placeholder="Auckland International Airport" required data-validation-required-message="Please enter your pick-up address."/>
 				</div>
 
 				<div>
-					<label for="address_to">Drop off address</label>
-					<input type="address" name="address_to" id="address3" placeholder="" />
+					<label for="address_to">Drop off address*</label>
+					<input type="address" name="address_to" id="address3" placeholder="" required data-validation-required-message="Please enter your drop-off address."/>
 				</div>
 				
 					<div>
-					<label for="EAT">Expected Arrival Time</label>
-					<input type="time" name="Expected Arrival Time" id="EAT" placeholder="5pm" />
+					<label for="EAT">Expected Arrival Time*</label>
+					<input type="time" name="Expected Arrival Time" id="EAT" placeholder="5pm" required data-validation-required-message="Please enter your expected arrival time."/>
 				</div>
 			</div>
 
 
 
 
-			<label for="message">Any other things you would like us to know</label>
+			<label for="message">Any other things you would like us to know, e.g. your flight nubmer</label>
 			<textarea name="message" id="message" placeholder="Hi There..."></textarea>
 
 			<input type="submit" value="Send Message" />
