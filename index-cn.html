@@ -68,6 +68,41 @@ map:
 <section id="booking" class="diagonal">
 	<div class="container">
 	  		<h2>预定/询价</h2>
+	  		
+	  <div class="container halves">
+		<div>
+			<h3 class="editable">
+				扫描微信企业号
+			</h3>
+		
+			<p class="editable">
+				<a href="/portfolio/">看案例 &rarr;</a>
+			</p>
+		</div>
+		<div>
+		  
+		   <div class="container halves">
+		<div>
+			<h3 class="editable">
+				扫描微信企业号
+			</h3>
+		
+			<p class="editable">
+				<a href="/portfolio/">看案例 &rarr;</a>
+			</p>
+		</div>
+		<div>
+		  
+			<ul class="image-grid">
+				{% for client in site.clients limit: 4 %}
+					<li><a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}" /></a></li>
+				{% endfor %}
+			</ul>
+		</div>
+	</div>		
+	  		
+	  		
+	  		
 		<form action="{{ site.baseurl }}/contact-success/" method="post" class="contact-form">
 			<input type="hidden" name="_to" value="info@xshuttle.co.nz" />
 			<input type="text" name="_gotcha" style="display: none;" />
