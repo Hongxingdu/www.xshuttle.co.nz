@@ -161,6 +161,9 @@ map:
 		<div>
 			<h3>Address</h3>
 				<address><a target="_blank" href="https://www.google.com/maps/place/{{ page.map.address | url_encode }}">{{ page.map.address | replace: ", ", ", <br>" }}</a></address>
+				
+				<h3> Instant Messaging on WhatsApp</h3>
+				<p> <a href="{{ site.baseurl }}{{ client.url }}"><img src="{% include relative-src.html src=client.image_path %}" /></a></p>
 		</div>
 		<div>
 			<h3>Email</h3>
